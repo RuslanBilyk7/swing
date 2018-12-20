@@ -6,8 +6,8 @@ import java.awt.event.*;
 
 public class TwoButtons  {
 
-    private JFrame frame;
-    private JLabel label;
+        private JFrame frame;
+        private JLabel label;
 
     public static void main (String[] args) {
        TwoButtons gui = new TwoButtons();
