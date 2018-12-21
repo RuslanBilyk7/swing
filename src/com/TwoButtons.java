@@ -19,7 +19,8 @@ public class TwoButtons  {
        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
        JButton labelButton = new JButton("Change Label");
-       labelButton.addActionListener(new LabelButtonListener());
+       labelButton.addActionListener(new LabelButtonListener());//мы передаем методу регистрации слушателя кнопки
+        //экземплр соотв. класса слушателя (оба класса внутренние LabelButtonListener и ColorButtonListener)
 
        JButton colorButton = new JButton("Change Circle");
        colorButton.addActionListener(new ColorButtonListener());
@@ -32,16 +33,16 @@ public class TwoButtons  {
        frame.getContentPane().add(BorderLayout.EAST, labelButton);
        frame.getContentPane().add(BorderLayout.WEST, label);
 
-       frame.setSize(420,300);
+       frame.setSize(600,600);
        frame.setVisible(true);
     }
-
+//inner class
      class LabelButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
             label.setText("Ouch!");
         }
      } // close inner class
-
+//inner class
      class ColorButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
             frame.repaint();

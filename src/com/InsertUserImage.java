@@ -24,7 +24,9 @@ public class InsertUserImage {
         public void paintComponent(Graphics g) {
             Image image = new ImageIcon("c:\\dev\\projects\\swing\\src\\com\\qw.jpg").getImage();
             g.drawImage(image, 30, 40, this);
-//            g.fillOval(70, 70, 100, 100);
+            g.setColor(Color.white);
+            g.fillRect(200,200,this.getWidth(),this.getHeight());
+            g.fillOval(70, 70, 100, 100);
         }
     }
 }

@@ -77,7 +77,7 @@ public class MiniMusicPlayer3 {
 
 
 
- class MyDrawPanel extends JPanel implements ControllerEventListener {
+ class MyDrawPanel extends JPanel implements ControllerEventListener{
       
       // only if we got an event do we want to paint
       boolean msg = false;
